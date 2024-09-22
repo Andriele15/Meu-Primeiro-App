@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/drift"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/edtDistancia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/navy"
+        android:ems="10"
+        android:hint="Distância percorrida (km)"
+        android:inputType="numberDecimal"
+        android:padding="16px"
+        android:pointerIcon="none"
+        android:textColor="@color/gray"
+        android:textColorHint="@color/peach"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDistancia" />
+
+    <EditText
+        android:id="@+id/edtConsumo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/navy"
+        android:ems="10"
+        android:hint="Consumo médio (km/L)"
+        android:inputType="numberDecimal"
+        android:padding="16px"
+        android:pointerIcon="none"
+        android:textColor="@color/gray"
+        android:textColorHint="@color/peach"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtConsumo" />
+
+    <EditText
+        android:id="@+id/edtPreco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/navy"
+        android:ems="10"
+        android:hint="Preço por litro (R$)"
+        android:inputType="numberDecimal"
+        android:padding="16px"
+        android:pointerIcon="none"
+        android:textColor="@color/gray"
+        android:textColorHint="@color/peach"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPreco" />
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="monospace"
+        android:shadowColor="@color/gray"
+        android:text="FUEL SAVER"
+        android:textAlignment="center"
+        android:textColor="@color/red"
+        android:textColorLink="@color/design_default_color_primary"
+        android:textSize="40sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtNomeV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="20dp"
+        android:text="NOME DO VEÍCULO:"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitulo" />
+
+    <EditText
+        android:id="@+id/edtNomeV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/navy"
+        android:ems="10"
+        android:hint="Digite aqui..."
+        android:inputType="text"
+        android:padding="16px"
+        android:pointerIcon="none"
+        android:textColor="@color/gray"
+        android:textColorHint="@color/peach"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNomeV" />
+
+    <EditText
+        android:id="@+id/edtPlacaV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/navy"
+        android:ems="10"
+        android:hint="Digite aqui..."
+        android:inputType="text"
+        android:padding="16px"
+        android:pointerIcon="none"
+        android:textColor="@color/gray"
+        android:textColorHint="@color/peach"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPlacaV" />
+
+    <TextView
+        android:id="@+id/txtPlacaV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="PLACA DO VEÍCULO:"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtNomeV" />
+
+    <TextView
+        android:id="@+id/txtDistancia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="DISTÂNCIA:"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtPlacaV" />
+
+    <TextView
+        android:id="@+id/txtConsumo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="CONSUMO MÉDIO:"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtDistancia" />
+
+    <TextView
+        android:id="@+id/txtPreco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="PREÇO DO COMBUSTÍVEL POR LITRO:"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtConsumo" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnCalcular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/background_button"
+        android:text="CALCULAR"
+        android:textColor="@color/gray"
+        android:drawableStart="@drawable/baseline_monetization_on_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtPreco" />
+
+     <TextView
+        android:id="@+id/txtResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="RESULTADO:"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCalcular" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/txtTitulo"
+        app:layout_constraintEnd_toStartOf="@+id/txtTitulo"
+        app:layout_constraintTop_toTopOf="@+id/txtTitulo"
+        app:srcCompat="@drawable/tanque" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="200dp"
+        android:layout_marginBottom="-15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtNomeV"
+        app:layout_constraintEnd_toEndOf="@+id/txtNomeV"
+        app:srcCompat="@drawable/car" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="260dp"
+        android:layout_marginBottom="-14dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtDistancia"
+        app:layout_constraintEnd_toEndOf="@+id/txtDistancia"
+        app:srcCompat="@drawable/map" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="200dp"
+        android:layout_marginBottom="-14dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtConsumo"
+        app:layout_constraintEnd_toEndOf="@+id/txtConsumo"
+        app:srcCompat="@drawable/speedometer" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="-14dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtPreco"
+        app:layout_constraintEnd_toEndOf="@+id/txtPreco"
+        app:srcCompat="@drawable/money" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="200dp"
+        android:layout_marginBottom="-10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtPlacaV"
+        app:layout_constraintEnd_toEndOf="@+id/txtPlacaV"
+        app:srcCompat="@drawable/placa" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
