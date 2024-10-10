@@ -36,5 +36,7 @@ O uso de cores contrastantes melhora a legibilidade e a estética do aplicativo.
 <h2> 😶‍🌫️ Comentários 🗣️:</h2>
 
 -Eu sei que o design do app não é uma obra de arte, mas, no final, até gostei. 😂
+
 -Estava com bastante medo de não conseguir criar algo funcional, já que era meu primeiro contato com desenvolvimento mobile. Mas, no fim, tudo deu certo na medida do possível.
+
 -Além disso, este README é um teste, então ele está todo bonitinho, com imagens e tudo por causa disso.
