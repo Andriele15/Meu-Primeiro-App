@@ -55,56 +55,18 @@ Siga os passos abaixo para rodar o projeto localmente:
 
 ```bash
 ├── app
-
-
-│   ├── src
-
-
-│   │   ├── main
-
-
-│   │   │   ├──
-java/br/ulbra/fuelsaver_calculadoradeconbustivel
-
-
-│   │   │  
-│   ├── MainActivity.java      
-# Atividade principal com o cálculo dos litros necessários e do custo da viagem
-
-
-│   │   │   ├──
-res
-
-
-│   │   │  
-│   ├── layout
-
-
-│   │   │  
-│   │   ├── activity_main.xml   #
-Layout da tela principal
-
-
-│   │   │  
-│   └── values
-
-
-│   │   │  
-│       ├──
-strings.xml         # Strings usadas no
-app
-
-
-│   │   │  
-│       ├── colors.xml          # Cores definidas no projeto
-
-
-│   └── build.gradle                        # Configuração do
-Gradle
-
-
-└── README.md                               # Este arquivo
-
+│ ├── src
+│ │ ├── main
+│ │ │ ├── java/br/ulbra/fuelsaver_calculadoradeconbustivel
+│ │ │ │ ├── MainActivity.java #Atividade principal com o cálculo dos litros necessários e do custo da viagem
+│ │ │ ├── res
+│ │ │ │ ├── layout
+│ │ │ │ │ ├── activity_main.xml # Layout da tela principal
+│ │ │ │ └── values
+│ │ │ │ ├── strings.xml # Strings usadas no app
+│ │ │ │ ├── colors.xml # Cores definidas no projeto
+│ └── build.gradle # Configuração do Gradle
+└── README.md # Este arquivo
 ````
 ## 👨‍💻 Desenvolvedores –
 
